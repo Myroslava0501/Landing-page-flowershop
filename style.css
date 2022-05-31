@@ -1,0 +1,99 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px 100px;
+  background: radial-gradient(
+    328px at 2.9% 15%,
+    rgb(191, 224, 251) 0%,
+    rgb(232, 233, 251) 25.8%,
+    rgb(252, 239, 250) 50.8%,
+    rgb(234, 251, 251) 77.6%,
+    rgb(240, 251, 244) 100.7%
+  );
+}
+h1 {
+  text-align: center;
+  font-size: 30px;
+  font-family: Open Sans, Arial, sans-serif;
+  font-style: italic;
+  color: rgb(134, 14, 128);
+}
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+li {
+  display: inline;
+  margin: 30px 20px;
+}
+a {
+  text-decoration: none;
+  color: rgb(163, 83, 173);
+  opacity: 0.7;
+}
+a:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+section {
+  font-family: Open Sans, Arial, sans-serif;
+  font-size: 12px;
+  text-align: center;
+  line-height: 2;
+  margin-top: 20px;
+}
+strong {
+  color: rgb(134, 14, 128);
+}
+.example {
+  font-family: "Times New Roman", Times, serif;
+
+  font-weight: bolder;
+  font-size: 16px;
+  color: rgb(134, 14, 128);
+}
+section.hover {
+  background: rgba(129, 52, 129, 0.514);
+}
+img {
+  max-width: 170px;
+  border-radius: 4px;
+  transition: 1s;
+  cursor: pointer;
+}
+.first {
+  margin-right: 30px;
+}
+
+.third {
+  margin-left: 30px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 15px 25px;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  background: rgb(163, 83, 173);
+  border-radius: 15px;
+  border: 1px solid rgb(163, 83, 173);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: all 200ms ease-in-out;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+button:hover {
+  background: transparent;
+  color: rgb(134, 14, 128);
+  cursor: pointer;
+}
+.me {
+  font-family: Open Sans, Arial, sans-serif;
+  font-size: 10px;
+  text-align: center;
+  opacity: 0.7;
+  margin-top: 20px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flowers shop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Flowers shop <strong>Malibu</strong></h1>
+        <ul>
+          <li>
+            <a href="https://www.euroflorist.pl/en/bouquets "> Flowers</a>
+          </li>
+          <li>
+            <a href="https://www.euroflorist.pl/en/gourmet-baskets "> Gifts</a>
+          </li>
+          <li>
+            <a href="https://www.euroflorist.pl/en/delivery-terms"> Delivery</a>
+          </li>
+          <li>
+            <a href="https://www.euroflorist.pl/en/contact"> Contact us</a>
+          </li>
+          <section>
+            <p>
+              Hello, we are <strong>Malibu flower shop</strong> – Poland's
+              flower mail & online florist. For over 25 years we have been
+              delivering flower bouquets throughout Poland and abroad. Malibu is
+              part of the largest global network of around 54,000 florists
+              worldwide. Our bouquets are prepared by one of our reliable local
+              partners. We offer same day flower delivery & possibility to send
+              flowers anonymously.
+            </p>
+            <p class="example">Examples of flower bouquets</p>
+
+            <img
+              class="first"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/584/original/buket-tsvetov-milano-030182-1-800x800.jpg?1651849252"
+            />
+            <img
+              class="second"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/586/original/5867_big.jpg?1651849340"
+            />
+
+            <img
+              class="third"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/585/original/3cf8068860d1fb10f4ab56c067d44bfa.jpg?1651849263"
+            />
+
+            <footer>
+              <button>Buy now</button>
+              <p class="me">Coded by Myroslava Pankevych</p>
+            </footer>
+          </section>
+        </ul>
+      </header>
+    </div>
+    <script>
+      function buyFlower() {
+        let name = prompt("What is your name?");
+        let Email = prompt("What is your email?");
+        let budget = prompt("What is your budget");
+        let heading = document.querySelector("h1");
+        if (budget < 25) {
+          heading.innerHTML =
+            "☹️<br />Unfortunatelly" +
+            " " +
+            name +
+            " ," +
+            "We can't offer you anything for that budget";
+        } else {
+          heading.innerHTML =
+            "😄<br /> Great" +
+            " " +
+            name +
+            " ," +
+            "We will send you a full offer via Email";
+        }
+      }
+      let changeButton = document.querySelector("button");
+      changeButton.addEventListener("click", buyFlower);
+    </script>
+  </body>
+</html>
